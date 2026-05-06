@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="margins" style="flex-grow: 1; flex-direction: row; top: auto; left: auto; bottom: auto; right: auto; width: auto; height: auto; margin-top: 0; margin-right: 32px; margin-bottom: 0; margin-left: 32px; padding-top: 16px; padding-bottom: 16px;">
+        <ui:Image source="project://database/Assets/Scenes/icons/favorite_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=3e61b4320c885e0418f0bc3e109929ca&amp;type=3#favorite_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="min-width: 256px; min-height: 256px; margin-right: 16px;"/>
+        <ui:VisualElement name="text_container" style="flex-grow: 1;">
+            <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px;"/>
+            <ui:Label text="Label" style="color: rgb(255, 255, 255);"/>
+            <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
+                <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
+                <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

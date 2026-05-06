@@ -1,0 +1,58 @@
+:root {
+
+}
+
+.unity-tab-view__header-container {
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 64px;
+}
+
+.unity-tab__header{
+    flex-direction: column;
+    
+    color: #7C7C7C;
+    
+    background-color: black;    
+    min-width: 216px;
+    min-height: 128px;
+}
+
+.unity-tab__header-image{
+    margin-top: 16px;
+    margin-right: 0;
+    min-height: 64px;
+    width: 64px;
+
+    --unity-image-tint-color: #7c7c7c;
+}
+
+.unity-tab__header:checked {
+    color: white;
+}
+
+.unity-tab__header:checked  .unity-tab__header-image {
+    --unity-image-tint-color: white;
+}
+
+.unity-tab__header:checked .unity-tab__header-underline {
+    visibility: hidden;
+}
+
+.grid_layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge_button {
+    flex: none;
+}
+
+.mask {
+    overflow: hidden;
+}
+
+.colored_badge {
+    --unity-image-tint-color: #ff00ff;
+}
