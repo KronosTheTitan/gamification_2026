@@ -1,12 +1,8 @@
-:root {
-
-}
-
 .unity-tab-view__header-container {
     display: flex;
     justify-content: center;
     
-    padding-bottom: 64px;
+    padding-bottom: 96px;
 }
 
 .unity-tab__header{
