@@ -21,7 +21,7 @@
             <ui:Tab label="Numbers" name="numbers_tab" icon-image="project://database/Assets/Scenes/icons/dialpad_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=6ae602fd0930ffc46b5b20e5ce050181&amp;type=3#dialpad_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="flex-grow: 1; background-color: rgb(0, 0, 0);"/>
             <ui:Tab label="Go To" name="go_to_tab" icon-image="project://database/Assets/Scenes/icons/directions_walk_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=4714d22e31d250245963e975699f4dcf&amp;type=3#directions_walk_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="flex-grow: 1; background-color: rgb(0, 0, 0);"/>
             <ui:Tab label="Badges" name="badges_tab" icon-image="project://database/Assets/Scenes/icons/workspace_premium_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=5f44aca3a99c1d84999dfa25063ce3f9&amp;type=3#workspace_premium_64dp_FFFFFF_FILL0_wght400_GRAD0_opsz48" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
-                <ui:VisualElement name="badges_main_container" style="flex-grow: 1; display: flex;">
+                <ui:VisualElement name="badges_main_container" style="flex-grow: 1; display: none;">
                     <ui:VisualElement name="badges_top_header" style="-unity-text-align: middle-center; padding-top: 0; display: flex; min-height: 320px; max-height: 320px;">
                         <ui:Label text="BADGES" name="title" style="font-size: 60px; margin-top: 96px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-style: bold; min-height: 64px; max-height: 64px;"/>
                         <ui:VisualElement name="progress_bar" class="progress_bar" style="flex-grow: 1; margin-top: 32px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; height: 64px; max-height: 64px; min-height: 64px; border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; min-width: 1016px; background-color: rgb(52, 52, 55);">
@@ -142,8 +142,8 @@
                         </ui:VisualElement>
                     </ui:ScrollView>
                 </ui:VisualElement>
-                <ui:VisualElement name="honorable_dogs_badge" style="display: none;">
-                    <ui:VisualElement name="badges_top_header" style="-unity-text-align: middle-center; padding-top: 0; display: flex; min-height: 480px; max-height: 480px;">
+                <ui:VisualElement name="honorable_dogs_badge" style="display: flex;">
+                    <ui:VisualElement name="badges_top_header" style="-unity-text-align: middle-center; padding-top: 0; display: flex; min-height: 480px; max-height: 480px; visibility: visible;">
                         <ui:Label text="Honorable Dogs" name="title" style="font-size: 60px; margin-top: 96px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-font-style: bold; min-height: 64px; max-height: 64px;"/>
                         <ui:Label text="Find all the artworks containing a dog in the gallery of honour." name="description" style="margin-top: 32px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left; font-size: 40px; flex-wrap: nowrap; white-space: normal; min-height: 96px; max-height: 96px; height: 96px;"/>
                         <ui:VisualElement name="progress_bar" class="progress_bar" style="flex-grow: 1; margin-top: 32px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; height: 64px; max-height: 64px; min-height: 64px; border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; min-width: 1016px; background-color: rgb(52, 52, 55);">
@@ -153,69 +153,45 @@
                     </ui:VisualElement>
                     <ui:ScrollView name="artwork_list" style="background-color: rgb(52, 52, 55);">
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_1.png?fileID=2800000&amp;guid=c885a8ba62fd8c64db87411ea909f6d8&amp;type=3#thumbnail_1&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="View of Houses in Delft, Known as ‘The Little Street’" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Johannes Vermeer, c. 1658" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_2.png?fileID=2800000&amp;guid=d8913815f1d18a04eb3b2b311fe0b38e&amp;type=3#thumbnail_2&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="River Landscape with Riders" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Aelbert Cuyp (mentioned on object), c. 1653 - 1657" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_3.png?fileID=2800000&amp;guid=0f9f9a350ba4fee4c87401df854f20ee&amp;type=3#thumbnail_3&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="The Nave and Choir of the Mariakerk in Utrecht" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Pieter Jansz Saenredam (signed by artist), 1641-01-29" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_4.png?fileID=2800000&amp;guid=c3cbb2d4fa5c2a4459fb8a588be9997d&amp;type=3#thumbnail_4&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="The Lutenist" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Hendrick Martensz Sorgh, 1661" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_unknown.png?fileID=2800000&amp;guid=a0106b73f3e62184291885dae9ae6f67&amp;type=3#thumbnail_unknown&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                         <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
-                            <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgb(255, 0, 255);"/>
+                            <ui:Image source="" name="Image" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(52, 52, 55, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_unknown.png?fileID=2800000&amp;guid=a0106b73f3e62184291885dae9ae6f67&amp;type=3#thumbnail_unknown&quot;);"/>
                             <ui:VisualElement name="text_container" style="flex-grow: 1;">
-                                <ui:Label text="Introduction&#10;" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left;"/>
-                                <ui:Label text="the Gallery of Honour" style="color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                <ui:VisualElement name="audio_icon_text" style="flex-grow: 1; flex-direction: row; max-height: 48px; min-height: 48px; align-self: auto; align-content: auto;">
-                                    <ui:Image source="project://database/Assets/Scenes/icons/headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48.png?fileID=2800000&amp;guid=0baacd72e5fac5343b2a2d90e31f636f&amp;type=3#headphones_64dp_FFFFFF_FILL1_wght400_GRAD0_opsz48" style="max-width: 48px; min-width: 48px; min-height: 48px; max-height: 48px; margin-right: 16px;"/>
-                                    <ui:Label text="Label" style="justify-content: flex-start; align-self: center; color: rgb(255, 255, 255); -unity-text-align: upper-left;"/>
-                                </ui:VisualElement>
+                                <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
+                                <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
                             </ui:VisualElement>
                         </ui:VisualElement>
                     </ui:ScrollView>
