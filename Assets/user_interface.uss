@@ -52,3 +52,7 @@
 .colored_badge {
     --unity-image-tint-color: #ff00ff;
 }
+
+.progress_bar {
+    overflow: hidden;
+}
