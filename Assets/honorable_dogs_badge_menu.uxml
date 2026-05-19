@@ -8,7 +8,7 @@
             <ui:Label text="Find all the artworks containing a dog in the gallery of honour." name="description" style="margin-top: 32px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left; font-size: 40px; flex-wrap: nowrap; white-space: normal; min-height: 96px; max-height: 96px; height: 96px;"/>
             <ui:VisualElement name="progress_bar" class="progress_bar" style="flex-grow: 1; margin-top: 32px; margin-right: 32px; margin-bottom: 32px; margin-left: 32px; height: 64px; max-height: 64px; min-height: 64px; border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; min-width: 1016px; background-color: rgb(52, 52, 55);">
                 <ui:VisualElement name="progress_bar_fill" style="flex-grow: 1; max-width: 66%; max-height: 100%; min-width: 66%; min-height: 100%; background-color: rgb(204, 76, 40); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px;"/>
-                <ui:Label text="Found 4 / 6 works (66%)" name="progress_bar_text" style="position: absolute; align-items: stretch; align-self: center; align-content: auto; justify-content: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 64px;"/>
+                <ui:Label text="Found 4 / 6 works (66%)" name="progress_bar_text" style="position: absolute; align-items: stretch; align-self: center; align-content: auto; justify-content: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; height: 64px; color: rgb(255, 255, 255); font-size: 28px;"/>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:ScrollView name="artwork_list" style="background-color: rgb(52, 52, 55);">
@@ -16,42 +16,42 @@
                 <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_1.png?fileID=2800000&amp;guid=c885a8ba62fd8c64db87411ea909f6d8&amp;type=3#thumbnail_1&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="View of Houses in Delft, Known as ‘The Little Street’" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Johannes Vermeer, c. 1658" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Johannes Vermeer, c. 1658" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
                 <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_2.png?fileID=2800000&amp;guid=d8913815f1d18a04eb3b2b311fe0b38e&amp;type=3#thumbnail_2&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="River Landscape with Riders" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Aelbert Cuyp (mentioned on object), c. 1653 - 1657" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Aelbert Cuyp (mentioned on object), c. 1653 - 1657" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
                 <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_3.png?fileID=2800000&amp;guid=0f9f9a350ba4fee4c87401df854f20ee&amp;type=3#thumbnail_3&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="The Nave and Choir of the Mariakerk in Utrecht" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Pieter Jansz Saenredam (signed by artist), 1641-01-29" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Pieter Jansz Saenredam (signed by artist), 1641-01-29" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
                 <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_4.png?fileID=2800000&amp;guid=c3cbb2d4fa5c2a4459fb8a588be9997d&amp;type=3#thumbnail_4&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="The Lutenist" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Hendrick Martensz Sorgh, 1661" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Hendrick Martensz Sorgh, 1661" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
                 <ui:Image source="" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(255, 0, 255, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_unknown.png?fileID=2800000&amp;guid=a0106b73f3e62184291885dae9ae6f67&amp;type=3#thumbnail_unknown&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement template="ToursItem" name="tours_menu_entry" style="flex-direction: row; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; margin-left: 16px; margin-right: 16px; min-height: 288px;">
                 <ui:Image source="" name="Image" style="min-width: 256px; min-height: 256px; margin-right: 16px; background-color: rgba(52, 52, 55, 0); border-top-left-radius: 32px; border-top-right-radius: 32px; border-bottom-right-radius: 32px; border-bottom-left-radius: 32px; background-image: url(&quot;project://database/Assets/Scenes/icons/thumbnail_unknown.png?fileID=2800000&amp;guid=a0106b73f3e62184291885dae9ae6f67&amp;type=3#thumbnail_unknown&quot;);"/>
                 <ui:VisualElement name="text_container" style="flex-grow: 1;">
                     <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); font-size: 36px; -unity-text-align: upper-left; white-space: normal;"/>
-                    <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal;"/>
+                    <ui:Label text="Undiscovered" style="color: rgb(255, 255, 255); -unity-text-align: upper-left; white-space: normal; font-size: 28px;"/>
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:ScrollView>

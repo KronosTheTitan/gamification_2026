@@ -34,6 +34,12 @@ public class user_interface : MonoBehaviour
 
         gallery_open_button.clicked += on_gallery_open_button_clicked;
         gallery_close_button.clicked += on_gallery_close_button_clicked;
+
+        ScrollView art_list = ui_document.rootVisualElement.Q<ScrollView>("artwork_list");
+        art_list.ScrollTo(ui_document.rootVisualElement.Q<Button>("badge_button_active"));
+
+        ScrollView map = ui_document.rootVisualElement.Q<ScrollView>("badges_container");
+        map.ScrollTo(ui_document.rootVisualElement.Q<Button>("gallery_open_button"));
     }
 
     private void on_gallery_open_button_clicked()
